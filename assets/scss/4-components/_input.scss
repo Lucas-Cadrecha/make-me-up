@@ -11,43 +11,83 @@
 
   &-small{
 
-    width: 90%;
+    width: 95%;
     margin: 1vh 5%;
     background-color: #C4C4C4;
+    padding-left: 10px;
   }
 
-  &-long{
 
+  &-contact{
     width: 95%;
+    margin: 1vh;
+    background-color: #C4C4C4;
+    padding-left: 10px;
+  }
+
+  &-article{
+
+    width: 50%;
     margin: 1vh 2.5%;
     background-color: #C4C4C4;
+    padding-left: 10px;
+
+    &-file{
+
+      width: 48%;
+      height: 35%;
+      font-size: 70%;
+      text-align: left;
+      margin: 1vh 2.5%;
+      background-color: #C4C4C4;
+      padding-left: 10px;
+    }
+
+    &-short{
+
+      width: 48%;
+      margin: 1vh 2.5%;
+      background-color: #C4C4C4;
+      padding-left: 10px;
+    }
   }
 
-  &-soumettre{
+  &-soumettre {
 
-    width: 80%;
-    background-color: #C4C4C4;
+    width: 45%;
+    background-color: #797979;
     float: right;
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
 
       width: 40%;
       float: none;
       margin: 2vh;
     }
-  }
-  &-soumettre-contact{
 
-    width: 20%;
-    background-color: #C4C4C4;
-    margin: 0;
+    &-contact {
+
+      width: 20%;
+      background-color: #797979;
+      margin: 0;
+      margin-bottom: 1vh;
+    }
+
+    &-article{
+
+      width: 50%;
+      margin: 1vh 2.5%;
+      background-color: #797979;
+      padding-left: 10px;
+    }
   }
 
   &-textarea{
 
-    width: 95%;
+    width: 75%;
     background-color: #C4C4C4;
     margin: 4vh 4vh 4vh 25px;
+    padding-left: 10px;
   }
 }
 
@@ -56,4 +96,26 @@
   flex-wrap: initial;
   flex-direction: row;
   display: flex;
+
+  &-long{
+
+    flex-wrap: initial;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+.pos-input{
+
+  text-align: center;
+
+  &-left{
+
+    text-align: left;
+  }
+
+  &-right{
+
+    text-align: right;
+  }
 }

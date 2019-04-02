@@ -1,42 +1,45 @@
-<form action="get" class="form-insctiption">
+<form action="get" class="form-article">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-
+            <div class="col-md-12 pos-input">
                 <label for="titre">Titre de l'article<span class="date-color">*</span></label><br>
-                <input class="input-long" type="text" name="titre" id="titre" placeholder="Titre de l'article"/>
+                <input class="input-article" type="text" name="titre" id="titre" placeholder="Titre de l'article"/>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <label for="Catégories">Catégories<span class="date-color">*</span></label>
-                            <input class="input-small" type="text" name="Catégories" id="Catégories" placeholder="Catégories"/>
+                        <div class="col-md-6 pos-input-right">
+                            <label for="Catégories">Catégories<span class="date-color">*</span></label><br>
+                            <input class="input-article-short" type="text" name="Catégories" id="Catégories"
+                                   placeholder="Catégories"/>
                         </div>
-                        <div class="col-md-6">
-                            <label for="devenement">Date d'évenement</label>
-                            <input class="input-small" type="date" name="devenement" id="devenement" placeholder="Date d'évenement"/>
+                        <div class="col-md-6 pos-input-left">
+                            <label for="devenement">Date d'évenement</label><br>
+                            <input class="input-article-short" type="date" name="devenement" id="devenement"
+                                   placeholder="Date d'évenement"/>
                         </div>
                     </div>
                 </div>
-                <label for="paccroche">Phrase d'accroche<span class="date-color">*</span></label>
-                <input class="input-long" type="text" name="paccroche" id="paccroche" placeholder="Phrase d'accroche"/>
-                <br>
-                <label for="contenu">Contenu<span class="date-color">*</span></label>
+
+                <label for="paccroche">Phrase d'accroche<span class="date-color">*</span></label><br>
+                <input class="input-article" type="text" name="paccroche" id="paccroche"
+                       placeholder="Phrase d'accroche"/>
+                <br><br>
+                <label for="contenu">Contenu<span class="date-color">*</span></label><br>
                 <textarea class="input-textarea" name="contenu" id="contenu" cols="50" rows="10"
                           placeholder="contenu">
                 </textarea>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <label for="image">Image</label>
-                            <input class="input-small" type="text" name="image" id="image" placeholder="Image"/>
+                        <div class="col-md-6 pos-input-right">
+                            <label for="image">Image</label><br>
+                            <input class="input-article-file" type="file" name="image" id="image" placeholder="Image"/>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 pos-input-left">
                             <label for="soumettre">soumettre<span class="date-color">*</span></label><br>
-                            <input class="input-small" type="submit" name="soumettre" id="soumettre" value="soumettre">
+                            <input class="input-soumettre-article" type="submit" name="soumettre" id="soumettre"
+                                   value="soumettre">
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

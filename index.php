@@ -38,7 +38,7 @@ include 'bouton.html';
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
         </div>
-        <div class="col-md-12 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 p-0">
+        <div class="col-md-12 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 p-0 ">
 
             <?php
             include 'logoTop.html';
@@ -61,12 +61,12 @@ include 'bouton.html';
                 ?>
             </a>
             <!--div événement-->
-            <a class="lien-image" href="#">
+            <a class="lien-image" href="produit.php">
                 <?php
                 include 'blockEvenement.html';
                 ?>
             </a>
-            <a class="lien-image" href="#">
+            <a class="lien-image" href="produit.php">
                 <?php
                 include 'blockArticle.html';
                 ?>

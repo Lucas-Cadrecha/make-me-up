@@ -29,48 +29,54 @@ include 'bouton.html';
 ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 col-lg-3 col-xl-2 sidebar sidebar">
+        <div class="col-md-6 col-lg-3 col-xl-2 sidebar">
             <?php
             include 'sidebar.html';
             ?>
+
+            <div class="sidebar-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
         </div>
         <div class="col-md-12 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 p-0">
+
             <?php
             include 'logoTop.html';
             ?>
             <div class="container-fluid p-0 color-back">
-                <h1>INSCRIPTION / CONNEXION</h1>
+                <h1>ARTICLE</h1>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 p-0">
-                        <?php
-                        include 'formulaireInscription.html';
-                        ?>
-                    </div>
-                    <div class="col-md-2">
-                        <hr>
-                    </div>
-                    <div class="col-md-5 p-0">
-                        <?php
-                        include 'formulaireConnexion.html';
-                        ?>
-                    </div>
-                </div>
-            </div>
+            <!--div article-->
+            <a class="lien-image" href="#">
+                <?php
+                include 'blockArticle.html';
+                ?>
+            </a>
         </div>
     </div>
 </div>
 
-<!-- Bootstrap core JavaScript
+<!-- Bootstrap core JavaScript.col-md-9
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="assets/js/vendor/jquery.min.js"></script>
 <script src="assets/js/vendor/popper.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/slick/slick/slick.min.js"></script>
 <!-- build:js -->
 <script src="assets/js/app.js"></script>
+<!-- endbuild -->
 <script type="text/javascript">
+    $('#one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        prevArrow: '<button type="button" class="fa fa-angle-left slick-prev"></button>',
+        nextArrow: '<button type="button" class="fa fa-angle-right slick-next"></button>'
+
+    });
+
     $(document).ready(function() {
 
         /**

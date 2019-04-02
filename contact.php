@@ -29,12 +29,12 @@ include 'bouton.html';
 ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3 sidebar">
+        <div class="col-md-6 col-lg-3 col-xl-2 sidebar">
             <?php
             include 'sidebar.html';
             ?>
         </div>
-        <div class="col-md-9 p-0 offset-md-3">
+        <div class="col-md-12 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 p-0">
             <?php
             include 'logoTop.html';
             ?>
@@ -45,7 +45,6 @@ include 'bouton.html';
                 <?php
                 include 'formulaireContact.html';
                 ?>
-            </div>
             </div>
         </div>
     </div>
