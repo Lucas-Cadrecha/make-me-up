@@ -39,7 +39,7 @@ include 'bouton.html';
             include 'logoTop.html';
             ?>
             <div class="container-fluid p-0 color-back">
-                <h1>INSCRIPTION / CONNEXION</h1>
+                <h1>CONTACT</h1>
             </div>
             <div class="container">
                 <?php

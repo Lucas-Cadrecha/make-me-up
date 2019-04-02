@@ -10144,6 +10144,7 @@ h1 {
 
 .input-textarea {
   width: 75%;
+  height: 100px;
   background-color: #C4C4C4;
   margin: 4vh 4vh 4vh 25px;
   padding-left: 10px;
@@ -10183,6 +10184,14 @@ h1 {
 
 .pos-input-right {
   text-align: right;
+}
+
+.pos-input-contact-left {
+  margin-left: 50%;
+}
+
+.pos-input-contact-right {
+  margin-right: 50%;
 }
 
 .lien-image {

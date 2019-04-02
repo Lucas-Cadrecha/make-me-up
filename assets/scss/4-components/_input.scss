@@ -85,6 +85,7 @@
   &-textarea{
 
     width: 75%;
+    height: 100px;
     background-color: #C4C4C4;
     margin: 4vh 4vh 4vh 25px;
     padding-left: 10px;
@@ -117,5 +118,15 @@
   &-right{
 
     text-align: right;
+  }
+
+  &-contact-left{
+
+    margin-left: 50%;
+  }
+
+  &-contact-right{
+
+    margin-right: 50%;
   }
 }
